@@ -23,9 +23,3 @@ This project allows users to browse products, view details, and interact with a 
 - **Backend:** Node.js, Express  
 - **Database:** MongoDB  
 - **Tools:** npm, Postman (for API testing)
-
----
-
-## 🚀 How to Run Locally
-1. Clone the repository:
-```bash

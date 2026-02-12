@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Editor directories and filesI have created a folder you can see named Demo. Do one thing that in here there are backend, frontend, and database. You don't need to bother all these things. Your job is to make just a demo file that will have all the functionality that will be introduced by HTML, CSS, and JS JavaScript only. It will have all the design that includes in this website that is made by these languages. You will convert the same thing, the same thing, just the frontend and just the concept. It will work as good as the main website, but it will have just the functionality, not any kind of the... Because this has no database, no backend, only the frontend and the containing design. So make just the demo so that I can show it to the client that how this website works. Make every possible thing that is included by HTML, CSS, and JavaScript.
 .vscode/*
 !.vscode/extensions.json
 .idea

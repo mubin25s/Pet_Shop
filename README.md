@@ -1,4 +1,4 @@
-# 🐕 Pet Shop 3 
+# 🐕 Pet Shop
 
 A **full-stack MERN (MongoDB, Express, React, Node.js) Pet Shop web application**.  
 This project allows users to browse products, view details, and interact with a dynamic web interface connected to a backend server.

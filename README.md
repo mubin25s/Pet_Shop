@@ -4,7 +4,7 @@ A **full-stack MERN (MongoDB, Express, React, Node.js) Pet Shop web application*
 This project allows users to browse products, view details, and interact with a dynamic web interface connected to a backend server.
 
 🔗 **Live Demo:**  
-👉[ https://mfathumsachcha-netizen.github.io/petshelter-Demo/](https://mfathumsachcha-netizen.github.io/petshop-Demo/)
+👉 https://mfathumsachcha-netizen.github.io/petshop-Demo/
 
 ---
 

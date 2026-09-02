@@ -26,17 +26,17 @@ const Shop = () => {
     }, []);
 
     useEffect(() => {
-        let result = products;
+        let result = Array.isArray(products) ? products : [];
         if (category !== 'All') {
             result = result.filter(p => p.category === category);
         }
         if (search) {
-            result = result.filter(p => p.name.toLowerCase().includes(search.toLowerCase()));
+            result = result.filter(p => p.name && p.name.toLowerCase().includes(search.toLowerCase()));
         }
         setFilteredProducts(result);
     }, [category, search, products]);
 
-    const categories = ['All', ...new Set(products.map(p => p.category))];
+    const categories = ['All', ...new Set((Array.isArray(products) ? products : []).map(p => p.category).filter(Boolean))];
 
     return (
         <div className="max-w-7xl mx-auto px-4 py-8">

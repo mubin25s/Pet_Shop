@@ -12,9 +12,14 @@ export const AuthProvider = ({ children }) => {
     useEffect(() => {
         const token = localStorage.getItem('token');
         const userData = localStorage.getItem('user');
-        if (token && userData) {
-            setUser(JSON.parse(userData));
-            axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+        if (token && userData && userData !== 'undefined') {
+            try {
+                setUser(JSON.parse(userData));
+                axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+            } catch (err) {
+                console.error('Invalid user data in localStorage', err);
+                localStorage.removeItem('user');
+            }
         }
         setLoading(false);
     }, []);
@@ -44,7 +49,7 @@ export const AuthProvider = ({ children }) => {
 
     return (
         <AuthContext.Provider value={{ user, login, register, logout, loading }}>
-            {!loading && children}
+            {children}
         </AuthContext.Provider>
     );
 };
